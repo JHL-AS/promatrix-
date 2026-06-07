@@ -6,10 +6,10 @@ ProMatrix is an advanced, flexible matrix custom visual for Power BI. Build prof
 statements, balance sheets, budget variance and **any structured report** — with the layout control
 of Excel and the interactivity of Power BI. No reshaping of data and no DAX required for report logic.
 
-🔗 **Product & pricing:** https://jhl.no/promatrix.html  ·  **Docs:** https://jhl.no/hjelp.html
+🔗 **Product & pricing:** https://jhl.no/promatrix.html  ·  **Docs:** https://jhl.no/promatrix-hjelp.html
 
-> This repository is **source-available** (published for transparency and Microsoft Power BI
-> certification review). It is **not** open source — see [LICENSE](LICENSE).
+> This repository published for transparency and Microsoft Power BI
+> certification review. It is **not** open source — see [LICENSE](LICENSE).
 
 ---
 
@@ -43,32 +43,6 @@ for Microsoft certification and suitable for environments with strict data requi
 - **From AppSource:** Power BI → *Get more visuals* → search “ProMatrix”.
 - **Sideload:** download the latest `.pbiviz` and use *… → Import a visual from a file*.
 
-## Build from source
-
-Requires Node.js 18+ and the Power BI visuals tools (`pbiviz`).
-
-```bash
-npm install
-npm install -g powerbi-visuals-tools   # provides `pbiviz`
-pbiviz package                          # outputs dist/*.pbiviz
-# pbiviz start                          # local dev server
-```
-
-## Project structure
-
-| Path | Purpose |
-|---|---|
-| `src/visual.ts` | Main visual (rendering, editor, interactivity, export) |
-| `src/reportModel.ts` | Formula engine, templates, account standards |
-| `src/settings.ts` | Formatting-pane cards |
-| `src/license.ts` | Offline license verification (public key only) |
-| `src/i18n.ts` | UI translations (10 languages) |
-| `style/visual.less` | Styles |
-| `capabilities.json` | Data roles, objects, privileges |
-
-> Note: the license **signing** tools and the **private key** are not part of this repository
-> (the private key is git-ignored and never published). Only the embedded **public** key ships.
-
 ## Licensing model
 
 ProMatrix is a commercial product with a free tier:
@@ -87,4 +61,4 @@ Third-party components (e.g. ExcelJS, MIT) retain their own licenses.
 
 ## Support
 
-JHL AS · Jarle@jhl.no · https://jhl.no
+JHL AS · post@jhl.no · https://jhl.no
