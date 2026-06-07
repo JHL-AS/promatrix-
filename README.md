@@ -1,6 +1,6 @@
 # ProMatrix
 
-**The most powerful matrix for Microsoft Power BI — finance-ready out of the box.**
+**One of the most powerful matrix for Microsoft Power BI — finance-ready out of the box.**
 
 ProMatrix is an advanced, flexible matrix custom visual for Power BI. Build profit & loss
 statements, balance sheets, budget variance and **any structured report** — with the layout control
